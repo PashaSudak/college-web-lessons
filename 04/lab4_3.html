@@ -7,6 +7,20 @@
     <title>lab4_3</title>
 
     <style>
+        @font-face {
+        font-family: "RobotoRegular";
+        src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+        src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+                url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+                url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+        }
+            
+        * {
+            font-family: "RobotoRegular", sans-serif;
+        }
+
         .body {
             margin-left: calc(50% - 1000px/2);;
             margin-right: calc(50% - 1000px/2);;
@@ -20,6 +34,10 @@
             vertical-align: middle;
         }
 
+        .h2 {
+            font-size: 36px;
+        }
+
         img {
             display: inline-block;
             margin-top: 35px;
@@ -30,21 +48,31 @@
             width: 1000px;
             height: 50px;
             background: #CDBB82;
+            margin-bottom: 19px;
         }
 
-        li {
+        .nav ul li {
             display: inline-table;
             list-style-type: none;
             font-size: 20px;
             text-align: center;
             text-decoration-line: underline;
-            padding-top: 13px;
-            padding-left: 104px;
+            margin-top: 9px;
+            margin-left: 100px;
+            padding: 4px;
         }
 
-        li:hover {
+        .nav ul li:hover {
             color: grey;
             background: lightcyan;
+        }
+
+        .whitebox {
+            background: white;
+            padding-left: 52px;
+            padding-right: 52px;
+            padding-bottom: 28px;
+            padding-top: 1px;
         }
 
         .box {
@@ -75,9 +103,9 @@
         </nav>
     </header>
 
-    <div>
+    <div class="whitebox">
         <h2 class="h2">
-
+            Заголовок другого рівня
         </h2>
         <div class="box">
 
