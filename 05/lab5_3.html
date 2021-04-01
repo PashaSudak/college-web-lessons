@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab4_3</title>
+
+    <style>
+        @font-face {
+        font-family: "RobotoRegular";
+        src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+        src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+             url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+             url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+        }
+            
+        * {
+            font-family: "RobotoRegular", sans-serif;
+            margin: 0px;
+        }
+
+        .body {
+            background-color: #2071BC;
+        }
+
+        .header {
+            background-color: #2071BC;
+            color: white;
+        }
+
+
+        .nav {
+            text-align: center;
+        }
+
+        .nav ul {
+            display: inline-block;
+        }
+
+        .nav ul li {
+            list-style-type: none;
+            font-size: 24px;
+            text-align: center;
+            display: block;
+            float:left;
+            margin-right: 95px;
+            margin-left: 95px;
+        }
+
+        .nav ul li:hover {
+            text-shadow: 4px 4px 4px rgba(186, 183, 183, 0.52);
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            font-size: 60px;
+        }
+
+        .main {
+            background-color: white;
+        }
+
+        .aside {
+            margin-left: 18px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .referenseBlock {
+            margin: 30px;
+            width: 300px;
+            height: 60px;
+            text-align: center;
+            background-color: #2071BC;
+
+            font-size: 24px;
+            color: white;
+        }
+
+        .referenseBlock p {
+            padding: 18px;
+        }
+
+        .mainText {
+            position: absolute;
+            float:left;
+            left: 435px;
+            padding-top: 45px;
+        }
+
+        .titleOfArticle {
+            font-size: 34px;
+        }
+
+        .articleText {
+            padding-top: 23px;
+            font-size: 18px;
+        }
+
+        .footer {
+            background-color: #2071BC;
+            color: white;
+            text-align: center;
+        }
+
+        .footer .firstrow {
+            display: inline-block;
+        }
+
+        .footer .firstrow div{
+            font-size: 34px;
+            text-align: center;
+            display: block;
+            float:left;
+            margin-top: 32px;
+            margin-right: 207px;
+            margin-left: 207px;
+        }
+
+        .footer .secondrow div{
+            margin-right: 207px;
+            margin-left: 207px;
+            margin-top: 30px;
+            text-align: center;
+            display: block;
+            float:left;
+        }
+
+        .footer .secondrow .contacts {
+            text-align: left;
+            width: 238px;
+        }
+
+        .footer .secondrow .social img {
+            margin-right: 24px;
+        }
+
+        .footer .secondrow div ul li {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li>Navigation 1</li>
+                <li>Navigation 2</li>
+                <li>Navigation 3</li>
+                <li>Navigation 4</li>
+            </ul>
+        </nav>
+        <h1 class="header">
+            Header
+        </h1>
+    </header>
+
+    <main class="main">
+        <div class="mainText">
+            <h2 class="titleOfArticle">
+                Title of the artice
+            </h2>
+            <article class="articleText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt accusamus dolores ullam eaque alias quam quisquam, aperiam ipsum. Possimus officia veritatis enim est distinctio numquam accusantium optio, ipsa quas!
+            </article>
+        </div>
+
+        <div class="aside">
+            <div class="referenseBlock"><p>Referense 1</p></div>
+            <div class="referenseBlock"><p>Referense 2</p></div>
+            <div class="referenseBlock"><p>Referense 3</p></div>
+            <div class="referenseBlock"><p>Referense 4</p></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="firstrow">
+            <div>
+                Contacts
+            </div>
+            <div>
+                Social medias
+            </div>
+            <div>
+                Partners
+            </div>
+        </div>
+        <div class="secondrow">
+            <div class="contacts">
+                <p>Some City, 24 Some street</p>
+                <p>+38(099) 125 08 07</p>
+                <p>company@mail.com</p>
+            </div>
+            <div class="social">
+                <img src="img/facebook.png">
+                <img src="img/inst.png">
+                <img src="img/tiktok.png">
+            </div>
+            <div>
+                <ul>
+                    <li>Minato Aqua</li>
+                    <li>Tsunomaki Watame</li>
+                    <li>Usada Pekora</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
