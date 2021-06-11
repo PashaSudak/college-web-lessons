@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a,b,symbol;
+
+    function getValue(value)
+    {
+        while(true)
+        {
+            let a = prompt("Введіть " + value + " число");
+            if(a == null)
+            {
+                process.exit();
+            }
+            if (isNaN(a) || a == '') 
+            {
+                alert(`ERROR: ${a} is not num`);   
+                continue;
+            }
+            return a;
+        }
+    }
+
+    a = getValue("1");
+
+    while(true)
+    {
+        symbol = prompt("Введіть знак дії");
+        if(symbol == null)
+        {
+            process.exit();
+        }
+        if(symbol != '+'&& symbol != '-' && symbol != '*' && symbol != '/')
+        {
+            alert("ERROR: incorrect symbol");
+            continue;
+        }
+        break;
+    }
+
+    b = getValue("2");
+
+    while(true)
+    {
+        switch(symbol) 
+        {
+            case '+': alert(a + b); break;
+
+            case '-':
+            alert(a - b);
+            break;
+
+            case '*':
+            alert(a * b);
+            break;
+
+            case '/':
+            if (b == 0)
+            {
+                alert("ERROR Ділення на 0");
+            }
+            else 
+            {
+                alert(a / b)
+            }
+            break;
+
+            default:
+                alert("ERROR");
+        }
+        break;
+    }
+        
+    </script>
+</body>
+</html>

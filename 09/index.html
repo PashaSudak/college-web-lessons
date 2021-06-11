@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emails = [];
+
+        while (true)
+        {
+            let input = prompt("Введіть електронну адресу.");
+
+            alert(emails.includes(input));
+
+            if (emails.includes(input))
+            {
+                alert("Таку пошту вже було доданно!");
+            }
+            else if (input = null) break;
+            else    
+            {
+                emails.push(input);
+            }
+        }
+
+        alert("Пошти: " + emails.join(", "))
+    </script>
+</body>
+</html>
